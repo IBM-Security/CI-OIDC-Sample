@@ -1,0 +1,19 @@
+<div class="bx--row landing-page__banner">
+	<div class="bx--col-lg-12">
+		<div data-notification class="ci--notification-error bx--inline-notification bx--inline-notification--error" role="alert">
+			<div class="bx--inline-notification__details">
+				<svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" class="bx--inline-notification__icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M10,1c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S15,1,10,1z M13.5,14.5l-8-8l1-1l8,8L13.5,14.5z"></path><path d="M13.5,14.5l-8-8l1-1l8,8L13.5,14.5z" data-icon-path="inner-path" opacity="0"></path></svg>
+				<div class="bx--inline-notification__text-wrapper">
+				<p class="bx--inline-notification__title">{{error.status}}</p>
+				<p class="bx--inline-notification__subtitle">{{message}}
+				<pre>
+					<code class="json">
+{{error.stack}}
+				</code>
+				</pre>
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

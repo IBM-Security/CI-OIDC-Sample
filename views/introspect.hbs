@@ -1,0 +1,92 @@
+<div class="ds-bg-contextual-blue-5">
+  <div class="ds-flex ds-flex-align-items-center ds-fade-in ds-delay-3 ds-flex-fill ds-bg-dark ds-no-gutter ds-padding-top-5 ds-padding-bottom-5">
+    <div class="ds-col-xs-12 ds-col-md-11 ds-offset-md-1">
+      <h2 class="ds-heading-2 ds-margin-bottom-0">Token Introspection</h2>
+    </div>
+  </div>
+</div>
+<div class="ds-grid">
+	<div class="ds-row">
+		<div class="ds-margin-top-2"></div>
+		<div class="ds-col-xs-10 ds-offset-xs-1 ds-col-lg-8 ds-offset-lg-2 ds-col-xl-6 ds-offset-xl-3 ds-align-text-left">
+			<div class="ds-panel ds-panel-raised">
+			    <div class="ds-panel-header">
+			        <h2 class="ds-margin-top-0 ds-margin-bottom-0">{{title}}</h2>
+			    </div>
+			    <div class="ds-panel-container ds-bg-neutral-0 ds-text-small">
+			    	<p>View the information from introspection of user's Access Token.</p>
+            <p>Access Token is: <b>{{atoken}}</b>.</p>
+			        <h3>Token Information:</h3>
+					<div class="ds-table-container">
+					    <table class="ds-table ds-table-compact ds-hover">
+					        <thead>
+					            <tr>
+					                <th>Attribute</th>
+					                <th>Value</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <td>Active?</td>
+					                <td>{{introspect.active}}</td>
+					            </tr>
+                      <tr>
+                          <td>Scope</td>
+                          <td>{{introspect.scope}}</td>
+                      </tr>
+					            <tr>
+					                <td>Token Type</td>
+					                <td>{{introspect.token_type}}</td>
+					            </tr>
+					            <tr>
+					                <td>Grant Type</td>
+					                <td>{{introspect.grant_type}}</td>
+					            </tr>
+					            <tr>
+					                <td>Issued At</td>
+					                <td>{{introspect.iat}}</td>
+					            </tr>
+					             <tr>
+					                <td>Expires</td>
+					                <td>{{introspect.exp}}</td>
+					            </tr>
+					            <tr>
+					                <td>Client ID</td>
+					                <td>{{introspect.client_id}}</td>
+					            </tr>
+                      <tr>
+					                <td>Preferred User Name</td>
+					                <td>{{introspect.preferred_username}}</td>
+					            </tr>					            <tr>
+					                <td>Identity Source</td>
+					                <td>{{introspect.realmName}}</td>
+					            </tr>
+					        </tbody>
+					    </table>
+					</div>
+
+					<div class="ds-row ds-margin-top-1">
+						<div class="ds-accordion-container ds-margin-top-0 ds-margin-bottom-0" aria-labelledby="See full JSON Response">
+						    <div class="ds-row ds-accordion-item" aria-controls="ds-accordion-slidedown" aria-expanded="false" role="accordion item">
+						        <div class="ds-accordion-title">See full JSON Response</div>
+						        <div class="ds-accordion-slidedown" aria-hidden="true" role="region">
+						            <code class="language-json ds-code ds-padding-1">
+										{{fullJson}}
+							        </code>
+						        </div>
+						    </div>
+						</div>
+					</div>
+			    </div>
+			    <div class="ds-panel-footer">
+			        <div class="ds-col-lg-2 ds-hide ds-display-lg-inline-block ds-padding-top-1">
+					    <a class="ds-button" href="/users">User Home</a>
+					</div>
+					<div class="ds-col-lg-2 ds-hide ds-display-lg-inline-block ds-padding-top-1">
+					    <a class="ds-button" href="/logout">Logout</a>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>

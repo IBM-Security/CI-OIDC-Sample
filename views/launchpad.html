@@ -1,0 +1,43 @@
+<div class="ds-bg-contextual-blue-5">
+  <div class="ds-flex ds-flex-align-items-center ds-fade-in ds-delay-3 ds-flex-fill ds-bg-dark ds-no-gutter ds-padding-top-5 ds-padding-bottom-5">
+    <div class="ds-col-xs-12 ds-col-md-11 ds-offset-md-1">
+      <h2 class="ds-heading-2 ds-margin-bottom-0">Application Launchpad</h2>
+    </div>
+  </div>
+</div>
+<div class="ds-grid">
+	<div class="ds-row">
+		<div class="ds-margin-top-2"></div>        
+                	<div class="ds-col-8 ds-offset-2">
+                  <div class="ds-row">
+                    <div class="ds-col-3 ds-margin-bottom-1">
+                      <a href="/users" id="" class="ds-button ds-primary">
+                          Go Home
+                      </a>
+                    </div>
+                  </div>
+                    <div class="ds-row">
+                        {{#apps}}	
+                          {{#applications}}
+                          {{#links}}
+                          <div class="ds-col-3 ds-margin-bottom-1">
+                                  <div class="ds-panel ds-panel-raised">
+                                      <div class="ds-panel-container">
+                                        <p class="ds-heading-5">
+                                          {{linkName}}
+                                        <p>
+                                        <center><img src="https://casesecurity.ice.ibmcloud.com{{icon}}" style="width:20%"> </center>                     
+                                          <a href="{{url}}" id="" class="ds-button ds-truncate">
+                                              Launch
+                                          </a>
+                                         
+                                      </div>
+                                  </div>
+                          </div>	
+                          {{/links}} 
+                        {{/applications}}
+                      {{/apps}}
+                      </div>
+                    </div>  
+	</div>	
+</div>
