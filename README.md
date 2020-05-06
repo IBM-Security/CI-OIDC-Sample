@@ -50,6 +50,8 @@ By default the Application URL will listen on localhost port 3000. Enter `http:/
 1.2 **Enter the Redirect URI**
 The Redirect URI that we will use is `http://localhost:3000/oauth/callback`. 
 
+1.2.1 **Disable PKCE**
+
 1.3 **Save to Generate Client ID and Secret**
 Once you save your application, you will be given the client ID and secret, copy these for use when configuring the OIDC application. 
 
