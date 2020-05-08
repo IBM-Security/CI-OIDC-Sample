@@ -109,7 +109,7 @@ app.get('/oauth/callback', passport.authenticate('openidconnect', {
 // revoke the access_token at IBM Cloud Identity
 app.get('/logout', function(req, res){
   
-  request.post(`${OIDC_TOKEN_URI}/revoke`, {
+  request.post(`${OIDC_BASE_URI}/revoke`, {
     'form':{
       'client_id': process.env.OIDC_CLIENT_ID,
       'client_secret': process.env.OIDC_CLIENT_SECRET,
